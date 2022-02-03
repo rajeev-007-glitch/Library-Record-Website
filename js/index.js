@@ -94,11 +94,11 @@ function libraryFormSubmit(e) {
   let type;
 
   if (action.checked) {
-    type = action.value;
+    type = 'Action';
   } else if (sciFi.checked) {
-    type = sciFi.value;
+    type = 'SciFi';
   } else if (romance.checked) {
-    type = romance.value;
+    type = 'Romance';
   }
 
   let book = new Book(name, author, type);
